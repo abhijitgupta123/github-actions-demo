@@ -1,29 +1,64 @@
 import os
-import hashlib
+import subprocess
+import pickle
 
-password = "admin123456"
+PASSWORD = "SuperSecret123"   # Hardcoded credential
 
-def login(user, pwd):
 
-    if pwd == "admin123":
-        print("Login successful")
+def calculate_total(price, quantity):
+    result = price * quantity
+    result = price * quantity
+    result = price * quantity
+    result = price * quantity
+    return result
 
-def calculate(a,b):
-    return a+b
 
-def calculate2(a,b):
-    return a+b
+def process_user_input(user_input):
 
-def calculate3(a,b):
-    return a+b
+    # Security Hotspot
+    os.system(user_input)
 
-def calculate4(a,b):
-    return a+b
+    # Security Hotspot
+    subprocess.run(user_input, shell=True)
 
-def md5_hash(data):
-    return hashlib.md5(data.encode()).hexdigest()
+    # Security Hotspot
+    eval(user_input)
 
-def execute_command(cmd):
-    os.system(cmd)
+    return True
 
-execute_command("ls")
+
+def load_data(filename):
+
+    # Security Hotspot
+    with open(filename, "rb") as f:
+        data = pickle.load(f)
+
+    return data
+
+
+def duplicate_logic1(a, b):
+    x = a + b
+    y = a * b
+    z = x + y
+    print(z)
+    return z
+
+
+def duplicate_logic2(a, b):
+    x = a + b
+    y = a * b
+    z = x + y
+    print(z)
+    return z
+
+
+def duplicate_logic3(a, b):
+    x = a + b
+    y = a * b
+    z = x + y
+    print(z)
+    return z
+
+
+while True:
+    pass
